@@ -1,0 +1,40 @@
+body {
+    font-family:sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-grey-dark;
+
+}
+
+.heading-primary {
+    color: $color-black;
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.heading-secondary {
+    color: rgba($color: $color-grey-dark-3, $alpha: .90);
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.heading-tertiary{
+    &--main{
+        display: inline;
+        margin-top: 5px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: rgba($color: $color-grey-dark-3, $alpha: .88);
+        letter-spacing: 0.5px;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1.4rem;
+        // font-weight: 600;
+    }
+}

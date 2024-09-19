@@ -1,0 +1,55 @@
+.project{
+    display: inline-block;
+    width: 70%;
+    height: 80rem;
+    padding: 2rem;
+    margin:1.6rem 3.8rem;
+    background-color: #fffcfa8f;
+    border-radius: 4rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:3.4rem 5rem;
+
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    //  __progress-section
+
+    &__progress-section{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        &__left{
+            display: grid;
+            grid-template-columns: repeat( 4 , 1fr);
+            column-gap: 6rem;
+
+            &__detail{
+                .text{
+                    position: relative;
+                }
+                .text::before{
+                    content: "";
+                    padding: 3px;
+                    border-radius: 50%;
+                    border: 2px solid $color-grey-dark;
+                    position: absolute;
+                    bottom: 22%;
+                    right: -40%;
+                    background-color: rgba($color: $color-grey-dark, $alpha: .40);
+                }
+            }
+
+        }
+        &__right{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
+
+}
