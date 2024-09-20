@@ -3,99 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test 4 </title>
+    <title>Test 4</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <main class="portfolio">
-      <section class="navigation">
-        <div class="navigation__vertical">
-          <div class="navigation__vertical__left">
-            <div class="navigation__vertical__left__logo">
-              <img src="img/logo.png" alt="logo1" class="img" />
-            </div>
-            <h1 class="heading-primary">Portfolio</h1>
-            <div class="navigation__vertical__left__searchbar">
-              <input type="search" name="search" placeholder="Search hear" />
-              <span class="navigation__vertical__left__searchbar__icon"
-                ><ion-icon name="search-outline"></ion-icon
-              ></span>
-            </div>
+  <body class="portfolio">
+    <div class="navigation__logo">
+      <img src="img/logo.png" alt="logo1" class="img" />
+    </div>
+    <div class="navigation__flex">
+      <h1 class="heading-primary">Portfolio</h1>
+      <div class="navigation__searchbar">
+        <input type="search" name="search" placeholder="Search hear" />
+        <span class="navigation__searchbar__icon"
+          ><ion-icon name="search-outline"></ion-icon
+        ></span>
+      </div>
+    </div>
+    <div class="navigation__right">
+      <div class="navigation__right__icon">
+        <ion-icon name="add-circle"></ion-icon>
+        <ion-icon
+          name="notifications-outline"
+          class="navigation__right__icon__notification"
+        ></ion-icon>
+      </div>
+      <div class="navigation__right__profile">
+        <img src="img/person/person-1.jpg" alt="profile picture" />
+        <h2 class="heading-secondary">Hira R</h2>
+      </div>
+    </div>
+    <div class="navigation__iconset">
+      <ion-icon
+        name="home-outline"
+        class="navigation__iconset__icon"
+      ></ion-icon>
+      <ion-icon
+        name="person-circle-outline"
+        class="navigation__iconset__icon"
+      ></ion-icon>
+      <ion-icon
+        name="chatbox-outline"
+        class="navigation__iconset__icon"
+      ></ion-icon>
+      <ion-icon
+        name="calendar-outline"
+        class="navigation__iconset__icon"
+      ></ion-icon>
+      <ion-icon
+        name="time-outline"
+        class="navigation__iconset__icon"
+      ></ion-icon>
+      <ion-icon
+        name="settings-outline"
+        class="navigation__iconset__icon"
+      ></ion-icon>
+    </div>
+    <section class="project">
+      <div class="project__heading">
+        <h2 class="heading-secondary">Projects</h2>
+        <span class="heading-tertiary--main">July,2020</span>
+      </div>
+      <div class="project__progress-section">
+        <div class="project__progress-section__left">
+          <div class="project__progress-section__left__detail">
+            <h2 class="heading-secondary">45</h2>
+            <span class="heading-tertiary--sub text">In Progress</span>
           </div>
+          <div class="project__progress-section__left__detail">
+            <h2 class="heading-secondary">12</h2>
+            <span class="heading-tertiary--sub text">In Progress</span>
+          </div>
+          <div class="project__progress-section__left__detail">
+            <h2 class="heading-secondary">10</h2>
+            <span class="heading-tertiary--sub text">Upcoming</span>
+          </div>
+          <div class="project__progress-section__left__detail">
+            <h2 class="heading-secondary">67</h2>
+            <span class="heading-tertiary--sub">Total Project</span>
+          </div>
+        </div>
+        <div class="project_progress-section__right">
+          <ion-icon
+            name="menu"
+            class="project__progress-section__right__icon"
+          ></ion-icon>
+          <ion-icon
+            name="grid-outline"
+            class="project__progress-section__right__icon"
+          ></ion-icon>
+        </div>
+      </div>
 
-          <div class="navigation__vertical__right">
-            <div class="navigation__vertical__right__icon">
-              <ion-icon name="add-circle"></ion-icon>
-              <ion-icon
-                name="notifications-outline"
-                class="navigation__vertical__right__icon__notification"
-              ></ion-icon>
-            </div>
-            <div class="navigation__vertical__right__profile">
-              <img src="img/person/person-1.jpg" alt="profile picture" />
-              <h2 class="heading-secondary">Hira R</h2>
-            </div>
+      <div class="project__card project__card--1">
+        <div class="project__card__date project__card__date--1">
+          <span>July 2,2020</span>
+        </div>
+        <div class="project__card__heading">
+          <div class="heading-tertiary--main">Web Designing</div>
+          <div class="heading-tertiary--sub">Prototyping</div>
+        </div>
+        <div class="project__card__progress">
+          <span class="heading-tertiary--sub text">Progress</span>
+          <div
+            class="project__card__progress__data project__card__progress__data--1"
+          ></div>
+          <span class="project__card__progress__data-text text">90%</span>
+        </div>
+        <div class="project__card__bottom">
+          <div
+            class="project__card__bottom__people project__card__bottom__people--1"
+          >
+            <img src="img/person/person-1.jpg" alt="person image" />
+            <img src="img/person/person2.jpg" alt="person image" />
           </div>
+          <a
+            href="#"
+            class="project__card__bottom__days project__card__bottom__days--1"
+            >2 Days Left</a
+          >
         </div>
-        <div class="navigation__horizontal">
-          <div class="navigation__horizontal__iconset">
-            <ion-icon
-              name="home-outline"
-              class="navigation__horizontal__iconset__icon"
-            ></ion-icon>
-            <ion-icon
-              name="person-circle-outline"
-              class="navigation__horizontal__iconset__icon"
-            ></ion-icon>
-            <ion-icon
-              name="chatbox-outline"
-              class="navigation__horizontal__iconset__icon"
-            ></ion-icon>
-            <ion-icon
-              name="calendar-outline"
-              class="navigation__horizontal__iconset__icon"
-            ></ion-icon>
-            <ion-icon
-              name="time-outline"
-              class="navigation__horizontal__iconset__icon"
-            ></ion-icon>
-            <ion-icon
-              name="settings-outline"
-              class="navigation__horizontal__iconset__icon"
-            ></ion-icon>
+      </div>
+      <div class="project__card project__card--2">
+        <div class="project__card__date project__card__date--2">
+          <span>July 5,2020</span>
+        </div>
+        <div class="project__card__heading">
+          <div class="heading-tertiary--main">Mobile App</div>
+          <div class="heading-tertiary--sub">Shopping</div>
+        </div>
+        <div class="project__card__progress">
+          <span class="heading-tertiary--sub text">Progress</span>
+          <div
+            class="project__card__progress__data project__card__progress__data--2"
+          ></div>
+          <span class="project__card__progress__data-text text">30%</span>
+        </div>
+        <div class="project__card__bottom">
+          <div
+            class="project__card__bottom__people project__card__bottom__people--2"
+          >
+            <img src="img/person/person3.jpg" alt="person image" />
+            <img src="img/person/person4.jpg" alt="person image" />
           </div>
+          <a
+            href="#"
+            class="project__card__bottom__days project__card__bottom__days--2"
+            >3 week Left</a
+          >
         </div>
-      </section>
-
-      <section class="project">
-        <div class="project__heading">
-          <h2 class="heading-secondary">Projects</h2>
-          <span class="heading-tertiary--main">July,2020</span>
-        </div>
-        <div class="project__progress-section">
-          <div class="project__progress-section__left">
-            <div class="project__progress-section__left__detail">
-              <h2 class="heading-secondary">45</h2>
-              <span class="heading-tertiary--sub text">In Progress</span>
-            </div>
-            <div class="project__progress-section__left__detail">
-              <h2 class="heading-secondary">45</h2>
-              <span class="heading-tertiary--sub text">In Progress</span>
-            </div>
-            <div class="project__progress-section__left__detail">
-              <h2 class="heading-secondary">45</h2>
-              <span class="heading-tertiary--sub text">In Progress</span>
-            </div>
-            <div class="project__progress-section__left__detail">
-              <h2 class="heading-secondary">45</h2>
-              <span class="heading-tertiary--sub text">In Progress</span>
-            </div>
-          </div>
-          <div class="project_progress-section__right">arh</div>
-        </div>
-      </section>
-    </main>
-
+      </div>
+    </section>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

@@ -10,7 +10,7 @@ body {
 .heading-primary {
     color: $color-black;
     display: block;
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 600;
     letter-spacing: 1px;
 
@@ -18,7 +18,7 @@ body {
 .heading-secondary {
     color: rgba($color: $color-grey-dark-3, $alpha: .90);
     display: block;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 600;
 }
 
@@ -26,7 +26,7 @@ body {
     &--main{
         display: inline;
         margin-top: 5px;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         font-weight: 600;
         color: rgba($color: $color-grey-dark-3, $alpha: .88);
         letter-spacing: 0.5px;
@@ -34,7 +34,7 @@ body {
 
     &--sub {
         display: block;
-        font-size: 1.4rem;
-        // font-weight: 600;
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 }
