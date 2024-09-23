@@ -1,0 +1,100 @@
+.client__msg{
+    
+    &__header{
+        width: 114%;
+        padding: 0 11%;
+        margin-left: -7%;
+        padding-bottom: 1.6rem;
+        border-bottom: 3px solid rgba($color: $color-grey-dark-2, $alpha: .2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        &__icon{
+            display: block;
+            cursor: pointer;
+            padding-right: 2%;
+            font-size: 2.4rem;
+            color:$color-grey-dark;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            padding: 3px;
+            border-radius: 50%;
+            background-color: rgba($color: $color-grey-dark-3, $alpha: .9);
+            right: 5%;
+            cursor: pointer;
+        }
+
+        &::after{
+            top: 22%;
+        }
+        &::before {
+            bottom: 42%;
+        }
+    }
+    &__body{
+        padding: 0 1rem;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        height: 80rem;
+    
+        &::-webkit-scrollbar {
+            display: none !important;
+        }
+        &_msg{
+            display: flex;
+            text-align: center;
+            gap: 2.4rem;
+            padding: 0 2rem 1rem 2rem;
+            margin: 1rem 0;
+            border-bottom: 3px solid rgba($color: $color-grey-dark-2, $alpha: .2);
+
+            &__image{
+                width: 7rem;
+                border-radius: 50%;
+                margin-top: 26%;
+            }
+            &__text{
+                .head{
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+
+                    &--icon{
+                        margin-top: 3.4%;
+                        width: 2.2rem;
+                        height: 2.2rem;
+                    }
+                }
+                .text{
+                    margin-top: 6px;
+                    text-align: left;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    color: rgba($color: $color-grey-dark-3, $alpha: 0.8);
+                }
+                .date-text{
+                    text-align: end;
+                    color: $color-grey-dark-2;
+                }
+            }
+
+            &:hover{
+                transition: all .4s;
+                border-radius: 2rem;
+                transform: scale(1.02);
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                background-color:$color-white;
+            }
+            &:hover .head--icon{
+                fill:rgba($color: $color-grey-dark-3, $alpha: 1);
+            }
+        }
+    }
+}
