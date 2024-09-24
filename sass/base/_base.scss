@@ -7,13 +7,49 @@
 }
 
 html {
-    font-size: 52.5%;
+    font-size: 62.5%;
     background-color: aliceblue;
+
+    @media (max-width:93.5em){ //1500
+        font-size: 58.5%;
+    }
+    @media (max-width:87.5em){ //1400
+        font-size: 58%;
+    }
+    @media (max-width:75em){ //1200
+        font-size: 54%;
+    }
+    @media (max-width:69em){ 
+        font-size: 50%;
+    }
+    @media (max-width:62.5em){ 
+        font-size: 50%;
+    }
+    @media (max-width:54.5em){ 
+        font-size: 50%;
+    }
+    @media (max-width:46em){ 
+        font-size: 44%;
+    }
+    @media (max-width:37.5em){
+        font-size: 40%;
+    }
+    @media (max-width:31.5em){
+        font-size: 40%;
+    }
+    @media (max-width:27.5em){
+        font-size: 48%;
+    }
+    @media (max-width:22em){
+        font-size: 46%;
+        // background-color: aqua;
+    }
+
 }
 
 body {
     box-sizing: border-box;
     padding: 3rem;
-    margin: 10%;
+    margin: 4%;
 }
 

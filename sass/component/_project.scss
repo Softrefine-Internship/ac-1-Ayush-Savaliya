@@ -2,20 +2,32 @@
     &__heading{
         display: flex;
         justify-content: space-between;
-        align-items: center;   
+        align-items: center;
+        margin-top: 2.8rem; 
+        @media (max-width:37.5em) {
+            padding: 0 2rem;
+        }
+
     }
     //  __progress-section
 
     &__progress-section{
         margin-top: 2rem;
-        display: flex;
+        display:flex;
         justify-content: space-between;
         align-items: center;
-        
+        gap: 10%;
+        @media (max-width:37.5em) {
+            padding: 0 2rem;
+        }
         &__left{
             display: grid;
             grid-template-columns: repeat( 4 , 1fr);
-            column-gap: 6rem;
+            column-gap: 4rem;
+            @media (max-width:27.5em) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
 
             &__detail{
                 .text{
@@ -27,16 +39,26 @@
                     border-radius: 50%;
                     border: 2px solid $color-grey-dark;
                     position: absolute;
-                    bottom: 22%;
-                    right: -40%;
+                    top: 50%;
+                    right: -20%;
+                    transform: translateY(-50%);
                     background-color: rgba($color: $color-grey-dark, $alpha: .40);
                 }   
+                @media (max-width:31.5em) {
+                    .text::before{
+                        opacity: 0;
+                    }
+                }
             }
         }
         &__right{
+            
             &__icon{
                 font-size: 3rem;
-                margin-right: 2rem;
+                &:not(:last-child){
+                    margin-left: -50%;
+                    margin-right: 30%;
+                }
                 color: $color-black;
                 stroke-linecap: round;
                 cursor: pointer;
@@ -50,11 +72,40 @@
     &__card-section{
         margin: 5rem auto;
         margin-bottom: 0;
-        padding:  0 3rem;
+        padding:  0 5% 0 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 10%;
+        column-gap: 15%;
         row-gap: 8%;
+        @media (max-width:87.5em) {
+            column-gap: 12%;
+            row-gap: 6%;
+        }
+        @media (max-width:62.5em) {
+            width: 90%;
+            padding-left: 2%;
+        }
+        @media (max-width:46em) {
+            column-gap: 8%;
+            row-gap: 8%;
+            padding: 0;
+            margin: 5rem 1rem;
+            width: 95%;
+        }
+        @media (max-width:37.5em) {
+            grid-template-columns: 1fr;
+            width: 80%;
+            margin: 10% auto;
+        }
+        @media (max-width:37.5em) {
+            margin-top: 3rem;
+            padding: 0 2rem;
+        }
+        @media (max-width:27.5em) {
+            margin: 0 18px;
+            padding: 0;
+        }
+              
         overflow-y: scroll;
         scroll-behavior: smooth;
         height:70rem;
@@ -64,12 +115,28 @@
     }
     &__card{
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width: 100%;
+        width: 110%;
         border-radius: 4rem;
         padding: 2.4rem;
-        padding-bottom: 1.6rem;
+        padding-bottom: 1rem;
         display: inline-block;
         position: relative;
+        @media (max-width:62.5em) {
+            width: 95%;
+        }
+        @media (max-width:37.5em) {
+            width: 70%;
+            margin: 0 auto;
+        }
+        @media (max-width:31.5em) {
+            margin-top: 2rem;
+        }
+        @media (max-width:27.5em) {
+            width: 98%;
+            &:first-child{
+                margin-top: 4rem;
+            }
+        }
         &--1 {
             background-color: rgba($color: $color-white, $alpha: .50);
         }
@@ -173,20 +240,26 @@
         &__bottom{
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            
             margin-top: 4px;
-            margin-left: -8%;
-            width: 116%;
-            border-top: 3px solid rgba($color: $color-grey-dark, $alpha: .3);
+            margin-left: -10%;
+            width: 120%;
+            border-top: 3px solid rgba($color: $color-grey-light-2, $alpha: .9);
+
+            @media (max-width:37.5em) {
+                padding: 0 2rem;
+            }
 
             &__people{
                 margin-left: 8%;
-                margin-top: 1rem;
+                margin-top: 3.6%;
                 position: relative;
 
                 &::after{
                     content: "+";
                     color: $color-white;
-                    font-size:2.4rem;
+                    font-size:2.2rem;
                     font-weight: bolder;
                     padding: 0 12px;
                     position: absolute;
@@ -194,6 +267,15 @@
                     right: -45%;
                     border-radius: 50%;
                     cursor: pointer;
+                    @media (max-width:87.5em) {
+                        font-size: 1.8rem;
+                        padding: 0 8px;
+                    }
+                    // @media (max-width:69em) {
+                    //     text-align: center;
+                    //     top: 0;
+                    //     right: 0;
+                    // }
                 }
                 &--1::after{
                     background-color: #00dee6db;
@@ -215,11 +297,15 @@
                 }
 
                 img{
-                    width: 4rem;
+                    width: 3.6rem;
                     border-radius: 50%;
                     &:last-child{
                         margin-left: -20% ;
                     }
+                    @media (max-width:87.5em) {
+                        width: 3rem;
+                    }
+                    
                 }
             }
 
@@ -227,12 +313,18 @@
                 transition: all .4s;
                 &:link,
                 &:visited{
-                    margin: 1rem 2rem 0 0;
+                    margin: 0.8rem 2rem 0 0;
                     text-decoration: none;
-                    font-size: 1.7rem;
+                    font-size: 1.2rem;
                     font-weight: 600;
-                    padding: 0.8rem 1.8rem;
+                    padding: 1.4rem 2rem;
                     border-radius:3rem;
+                    width: auto;
+                    height: 8%;
+                    @media (max-width:87.5em) {
+                        padding: 6px 1rem;
+                        margin-right: 2%;
+                    }
                 }
                 &--1:link,
                 &--1:visited{
