@@ -16,10 +16,10 @@ html {
     @media (max-width:87.5em){ //1400
         font-size: 58%;
     }
-    @media (max-width:75em){ //1200
+    @media (max-width:78.5em){ //1200
         font-size: 54%;
     }
-    @media (max-width:69em){ 
+    @media (max-width:71.5em){ 
         font-size: 50%;
     }
     @media (max-width:62.5em){ 
@@ -42,7 +42,6 @@ html {
     }
     @media (max-width:22em){
         font-size: 46%;
-        // background-color: aqua;
     }
 
 }
@@ -50,6 +49,7 @@ html {
 body {
     box-sizing: border-box;
     padding: 3rem;
-    margin: 4%;
+    margin: 0 auto;
+    height: 100vh;
 }
 

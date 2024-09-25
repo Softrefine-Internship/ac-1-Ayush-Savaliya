@@ -1,66 +1,42 @@
 .client__msg{
     
     &__header{
-        width: 102%;
-        padding: 8% 11% 2% 11%;
+        
+        padding: 8% 2% 2% 10%;
         border-bottom: 3px solid rgba($color: $color-grey-dark-2, $alpha: .2);
         display: flex;
+        width: 10   0%;
         justify-content: space-between;
         align-items: center;
-        position: relative;
 
         &__icon{
-            display: block;
             cursor: pointer;
-            padding-right: 6%;
+            margin-right: 2.4rem;
             font-size: 2.4rem;
-            color:$color-grey-dark;
+            color: $color-black;
+            &--1{
+                color:$color-grey-dark;
+            }
         }
 
-        &::after,
-        &::before {
-            content: "";
-            position: absolute;
-            padding: 3px;
-            border-radius: 50%;
-            background-color: rgba($color: $color-grey-dark-3, $alpha: .9);
-            right: 10%;
-            cursor: pointer;
-        }
-
-        &::after{
-            top: 57%;
-        }
-        &::before {
-            bottom:23%;
-        }
     }
     &__body{
-        padding: 0 1rem;
+        // padding: 0 1rem;
         overflow-y: scroll;
         scroll-behavior: smooth;
-        height: 80rem;
+        height: 68vh;
     
         &::-webkit-scrollbar {
             display: none !important;
-        }
-
-        @media (max-width:62.5em) {
-            display: grid;
-            grid-template-columns: repeat(2 , 1fr);
-            column-gap: 2%;
-        }
-        @media (max-width:37.5em) {
-            display: block;
-            padding: 0 5rem;
         }
         &_msg{
             display: flex;
             text-align: center;
             gap: 2.4rem;
-            padding: 0 2.2rem 1rem 8%;
+            padding: 0 4rem 1rem 10%;
             margin: 8px 0;
             border-bottom: 3px solid rgba($color: $color-grey-dark-2, $alpha: .2);
+            // width: 105%;
             
 
             &__image{
@@ -83,10 +59,14 @@
                 .text{
                     margin-top: 6px;
                     text-align: left;
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                     font-weight: 600;
                     line-height: 1.4;
                     color: rgba($color: $color-grey-dark-3, $alpha: 0.8);
+
+                    @media (max-width:62.5em) {
+                            font-size: 1.6rem;
+                        }
                 }
                 .date-text{
                     text-align: end;

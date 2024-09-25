@@ -5,16 +5,20 @@
     border-radius: 4rem;
     position: relative;
     padding: 1rem;
+    padding-bottom: 0;
+    padding-right:0;
 
     display: grid;
-    grid-template-columns: 2fr 45fr 28fr;
+    grid-template-columns: 2fr 48fr 28fr;
     row-gap: 2rem;
+    @media (max-width:71.5em) {
+        grid-template-columns: 2fr 45fr 25fr;
+    }
     @media (max-width:62.5em) {
         grid-template-columns: 2fr 45fr 30fr;
         padding: 2.8rem;
     }
     @media (max-width:37.5em) {
-        // width: 100%;
         padding:0;
     }
     @media (max-width:31.5em) {
@@ -22,16 +26,21 @@
         width: 100%;
         border-radius: 0;
     }
-    @media (max-width:22em) {
-        font-size: 46%;
+    @media (max-width:27.5em) {
+        grid-template-columns: 2fr 35fr 20fr !important;
     }
+    // @media (max-width:22em) {
+    //     font-size: 46%;
+    // }
 }
 
 .project {
     background-color: #f7f7f7;
     border-radius: 4rem;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius: 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 1rem 5rem 0 5rem;
+    padding-left: 1rem;
     margin-left: 4%;
     @media (max-width:62.5em) {
         grid-column: 2/ span 4;
@@ -39,6 +48,10 @@
     }
     @media (max-width:37.5em) {
         margin-right: 3rem;
+    }
+    @media (max-width:27.5em) {
+        margin: 0;
+        padding: 0;
     }
     @media (max-width:22em) {
         width: 100%;

@@ -3,6 +3,9 @@
     @media (max-width:62.5em) {
         margin-top: 0rem;
     }
+    @media (max-width:31.5em) {
+        font-size: 30%;
+    }
     
     &__logo {
         margin-top: 3rem;
@@ -10,6 +13,11 @@
             height: 50%;
             width: 50%;
             margin: 17% 42% 0 42% ;
+            @media (max-width:27.5em) {
+                height: 45%;
+                width: 45%;
+                margin: 12% 42% 0 42%;
+            }
         }
         
     }
@@ -26,9 +34,6 @@
             gap: 0;
             margin-top: 2.4rem;
         }
-        @media (max-width:27.5em) {
-            display: block;
-        }
     }
     &__searchbar {
         position: relative;
@@ -37,15 +42,12 @@
             font-size: 2rem;
             position: absolute;
             left: 14%;
-            top: 24%;
+            top: 20%;
             cursor: default;
+            @media (max-width:27.5em) {
+                display: none;
+            }
         }
-
-        input::placeholder {
-            padding: 8%;
-            font-size: 1.6rem;
-        }
-
         input[type=search] {
             width: 130%;
             @media (max-width:75em) {
@@ -57,17 +59,18 @@
             @media (max-width:37.5em) {
                 width: 85%;
             }
-            padding: 5%;
+            @media (max-width:27.5em) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            
+            padding: 6% 15%;
             border: none;
             margin: 0 8%;
             font-size: 1.8rem;
             text-indent: 8px;
             outline: none;
             border-radius: 3rem;
-        }
-        input:focus + &__icon {
-            opacity: 0;
-            background-color: #df4e7e;
             
         }
     }
@@ -78,37 +81,18 @@
         align-items: flex-start;
         justify-content: flex-end;
         margin-right: 9%;
-        // @media (max-width:62.5em) {
-        //     grid-column: 2 / span 4;
-        // }
 
         &__icon {
             border-right: 2px solid rgba($color: $color-grey-dark, $alpha: .2);
-            @media (max-width:27.5em) {
-                display: inline-block;
-                margin-right: 2%;
-            }
             ion-icon{
-                // padding-right: ;
                 padding-top: 4px ;
                 font-size: 3.8rem;
                 color: $color-grey-dark-3;
                 transition: all .3s;
                 cursor: pointer;
-                &:hover {
-                    padding-right: 0;
-                    transform: translate(0%, 12%) rotate(45deg) ;
-                }
-                @media (max-width:27.5em) {
-                    display:block;
-                    margin-right: 4px;
-                }
                 
-            }
-            &__notification{
-                position: relative;
-                &:hover {
-                    transform: translate(0%, 0%) rotate(15deg) !important;
+                @media (max-width:27.5em) {
+                    font-size: 3rem;
                 }
             }
             &__notification::after{
@@ -118,19 +102,20 @@
                 border-radius: 50%;
                 background-color: #df4e7e;
                 position: absolute;
-                top: 21%;
-                left: 42%;
+                top: 23%;
+                left: 56%;
             }   
         }             
         &__profile {
             display: flex;
             align-items: center;
             @media (max-width:62.5em) {
-                // display: block;
                 padding-left: 3%;
             }
             @media (max-width:27.5em) {
-                display: block;
+                h2{
+                    display: none;
+                }
             }
             
             img{
@@ -138,10 +123,12 @@
                 width: 4.4rem;
                 border-radius: 50%;
                 margin-right: 1.6rem;
+                @media (max-width:27.5em) {
+                    width: 3.2rem;
+                    margin: 0.6rem;
+                }
             }
             &:hover {
-                transition: all .4s;
-                transform:scale(1.05);
                 cursor: pointer;
             }
         }
@@ -181,6 +168,7 @@
                 color: $color-white;
                 &::before{
                     opacity: 1;
+                    cursor: pointer;
                 }
             }
         }
