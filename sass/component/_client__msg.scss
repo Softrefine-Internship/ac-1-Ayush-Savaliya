@@ -23,9 +23,26 @@
 
     }
     &__body{
-        overflow-y: scroll;
+        height:87%;
+        @media (max-width:62.5em) {
+            height: 92%;
+            overflow: auto;
+        }
+        @media (max-width:37.5em) {
+            height: 88%;
+            overflow: auto;
+        }
+        @media (max-width:34.5em) {
+            height: 95%;
+            overflow: auto;
+        }
+        @media (max-width:27.5em) {
+            height: 97%;
+            overflow: auto;
+        }
+        overflow-y: scroll ;
         scroll-behavior: smooth;
-        height: 69vh;
+        
     
         &::-webkit-scrollbar {
             display: none !important;
@@ -50,8 +67,8 @@
                 margin-top: 35%;
             }
             &__text{
+                width: 100%;
                 @media (max-width:62.5em) {
-                    width: 100%;
                     margin-top: 6px;
                 }
                 .head{
