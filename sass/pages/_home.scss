@@ -1,8 +1,9 @@
 .portfolio{
-    background-color:#e9e7fd5a;
-    width: 90%;
-    box-shadow: rgba(0, 0, 0, .2) 0px 3px 14px;
-    border-radius: 4rem;
+    // background-color:#e9e7fd5a;
+    width: 100%;
+    height: 100vh;
+    // box-shadow: rgba(0, 0, 0, .2) 0px 3px 14px;
+    // border-radius: 4rem;
     position: relative;
     padding: 1rem;
     padding-bottom: 0;
@@ -27,7 +28,7 @@
         border-radius: 0;
     }
     @media (max-width:27.5em) {
-        grid-template-columns: 2fr 35fr 20fr !important;
+        grid-template-columns: 6rem 30fr 40fr !important;
     }
     // @media (max-width:22em) {
     //     font-size: 46%;
@@ -35,6 +36,7 @@
 }
 
 .project {
+    // height: 66vh;
     background-color: #f7f7f7;
     border-radius: 4rem;
     border-bottom-left-radius:0;
@@ -52,6 +54,8 @@
     @media (max-width:27.5em) {
         margin: 0;
         padding: 0;
+        grid-column: 1 /-1;
+        border-radius: 0;
     }
     @media (max-width:22em) {
         width: 100%;
@@ -59,7 +63,6 @@
     }
 }
 .client__msg {
-    // padding: 3.8rem 2.6rem;
     @media (max-width:62.5em) {
         grid-column: 1 / -1;
     }
